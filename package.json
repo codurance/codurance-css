@@ -4,7 +4,9 @@
   "description": "A Codurance themed version of bulma.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css-build": "node-sass --omit-source-map-url sass/codurance.scss css/codurance.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "author": "Codurance",
   "license": "Apache-2.0",
