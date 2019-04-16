@@ -1,3 +1,20 @@
 @charset "utf-8";
-@import "../node_modules/bulma/bulma.sass";
 
+// Codurance Colors
+$codurance-red: #d60d74;
+$codurance-orange: #ef7726;
+$codurance-yellow: #ffd000;
+$codurance-purple: #5c64b9;
+$codurance-green: #185466;
+$codurance-light-green: #51bfbb;
+  
+// Update Bulma Global variables
+$primary: $codurance-orange;
+$info: $codurance-purple;
+$success: $codurance-light-green;
+$warning: $codurance-yellow;
+$danger: $codurance-red;
+$dark: $codurance-green;
+
+// Import bulma.sass is always after declaring the variables
+@import "../node_modules/bulma/bulma.sass";
