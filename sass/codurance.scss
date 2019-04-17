@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 // Codurance Colors
 $codurance-red: #d60d74;
 $codurance-orange: #ef7726;
@@ -7,6 +9,8 @@ $codurance-yellow: #ffd000;
 $codurance-purple: #5c64b9;
 $codurance-green: #185466;
 $codurance-light-green: #51bfbb;
+$coudrance-font: 'Open Sans', Arial, sans-serif;
+
   
 // Update Bulma Global variables
 $primary: $codurance-orange;
@@ -15,6 +19,7 @@ $success: $codurance-light-green;
 $warning: $codurance-yellow;
 $danger: $codurance-red;
 $dark: $codurance-green;
+$family-primary: $coudrance-font;
 
 // Import bulma.sass is always after declaring the variables
 @import "../node_modules/bulma/bulma.sass";
