@@ -23,3 +23,27 @@ $family-primary: $codurance-font;
 
 // Import bulma.sass is always after declaring the variables
 @import "../node_modules/bulma/bulma.sass";
+
+h1 {
+    @extend .title, .is-1;
+}
+
+h2 {
+    @extend .title, .is-2;
+}
+
+h3 {
+    @extend .title, .is-3;
+}
+
+h4 {
+    @extend .title, .is-4;
+}
+
+h5 {
+    @extend .title, .is-5;
+}
+
+h6 {
+    @extend .title, .is-6;
+}

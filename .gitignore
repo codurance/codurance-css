@@ -52,8 +52,14 @@ jspm_packages/
 *.sass.map
 *.scss.map
 
-
-# End of https://www.gitignore.io/api/node
+# Jekyll 
+_site
+.sass-cache
+.jekyll-metadata
 
 # IDE related files
 .idea/
+
+# End of https://www.gitignore.io/api/node
+
+
