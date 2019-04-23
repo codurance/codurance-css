@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: default
 ---
 
 Codurance CSS is a lightweight library built on top of [Bulma](https://bulma.io).
