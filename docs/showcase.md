@@ -73,3 +73,66 @@ layout: default
 </div>
 {% endcapture %}
 {% include showcase-item.html content=tag %}
+
+### Dark Background
+{% capture dark-background %}
+<div class="dark-background">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>        
+    <p>This is a regular piece of text inside a paragraph</p>
+</div>
+{% endcapture %}
+{% include showcase-item.html content=dark-background %}
+
+### Codurance Header
+{% capture header %}
+<div class="codurance-header">
+    <h1>Regular</h1>
+</div>
+{% endcapture %}
+{% include showcase-item.html content=header %}
+
+{% capture header %}
+<div class="codurance-header dark-background">
+    <h1>Dark Background</h1>
+</div>
+{% endcapture %}
+{% include showcase-item.html content=header %}
+
+{% capture header %}
+<div class="codurance-header has-text-centered">
+    <h1>Centered Text</h1>
+</div>
+{% endcapture %}
+{% include showcase-item.html content=header %}
+
+{% capture header %}
+<div class="codurance-header__strong">
+    <h1>Strong Header</h1>
+</div>
+{% endcapture %}
+{% include showcase-item.html content=header %}
+
+
+### Bullet Point
+{% capture bullet-point %}
+<div class="bullet-point">
+    <h4>Bullet point</h4>
+    <p>text for that bullet point</p>
+</div>            
+{% endcapture %}
+{% include showcase-item.html content=bullet-point %}
+
+{% capture bullet-point %}
+<div class="dark-background">
+    <div class="bullet-point">
+        <h4>Bullet point</h4>
+        <p>text for that bullet point</p>
+    </div>
+</div>
+{% endcapture %}
+{% include showcase-item.html content=bullet-point %}
