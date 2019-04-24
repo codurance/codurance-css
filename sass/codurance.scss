@@ -106,3 +106,18 @@ h6 {
         border-color: $light;    
     }
 }
+
+ul {
+    list-style: disc outside;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+ol {
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.highlighter-rouge {
+    margin-top: 1.5em;
+}
