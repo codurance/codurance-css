@@ -57,6 +57,7 @@ Bulma has a quite easy way of overriding the main styles when using <code>sass</
 }
 ```
 
+
 ## Changing Bulma styles
 
 To change styles in Bulma you can override the variables for the library, you can see them [here](https://bulma.io/documentation/customize/variables/) 
