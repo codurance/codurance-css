@@ -6934,10 +6934,10 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 .dark-background {
-  color: #fff;
+  color: whitesmoke;
   background-color: #185466; }
   .dark-background h1, .dark-background h2, .dark-background h3, .dark-background h4, .dark-background h5, .dark-background h6 {
-    color: #fff; }
+    color: whitesmoke; }
 
 .codurance-header, .codurance-header__strong {
   border-color: #ef7726;
@@ -6954,3 +6954,27 @@ label.panel-block {
 
 .codurance-header__strong::after {
   border-top-width: 2px; }
+
+.bullet-point {
+  border-left: solid 1px transparent;
+  border-color: #ef7726;
+  border-width: 3px;
+  padding-left: 1.42857rem;
+  padding-right: 1.42857rem; }
+
+.bullet-point:hover {
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-duration: .3s;
+  border-color: #185466; }
+
+.bullet-point:hover {
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-duration: .3s;
+  border-color: #185466; }
+
+.dark-background .bullet-point:hover {
+  border-color: whitesmoke; }

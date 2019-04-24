@@ -49,11 +49,11 @@ h6 {
 }
 
 .dark-background {
-    color: #fff;
+    color: $light;
     background-color: $dark;
 
     h1, h2, h3, h4, h5, h6 {
-        color: #fff;
+        color: $light;
     }
 }
 
@@ -75,4 +75,35 @@ h6 {
 .codurance-header__strong::after {
     @extend .codurance-header::after;
     border-top-width: 2px;
+}
+
+.bullet-point {    
+    border-left: solid 1px transparent;
+    border-color: $codurance-orange;
+    border-width: 3px;
+    padding-left: 1.42857rem;
+    padding-right: 1.42857rem;
+}
+
+.bullet-point:hover {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-duration: .3s;
+    border-color: $codurance-green;    
+}
+
+.bullet-point:hover {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-duration: .3s;
+    border-color: $codurance-green;    
+}
+
+.dark-background {
+
+    .bullet-point:hover {
+        border-color: $light;    
+    }
 }
