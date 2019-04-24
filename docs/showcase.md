@@ -110,6 +110,13 @@ layout: default
 {% endcapture %}
 {% include showcase-item.html content=header %}
 
+{% capture header %}
+<div class="codurance-header__strong">
+    <h1>Strong Header</h1>
+</div>
+{% endcapture %}
+{% include showcase-item.html content=header %}
+
 
 ### Bullet Point
 {% capture bullet-point %}
