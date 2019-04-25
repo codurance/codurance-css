@@ -19,12 +19,12 @@ const minifyCss = () => {
 const updateDocsCSS = () => {
     return gulp.src('./dist/css/codurance.css')            
             .pipe(gulp.dest('./docs/assets/css'));
-}
+};
 
 gulp.task('sass', gulp.series(compileCss, updateDocsCSS));
-gulp.task('minify', minifyCss)
+gulp.task('minify', minifyCss);
 
 gulp.task('sass:watch', function () {
     gulp.watch('./sass/**/*.scss', compileCss);
-  });
+});
   
