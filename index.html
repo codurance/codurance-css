@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/codurance.css">
+    
+    <title>Document</title>
+</head>
+<body>
+        
+    <button class="button is-primary" data-toggle="modal" data-target="exampleModal">
+        Open Modal
+    </button>
+    <div class="modal" id="exampleModal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                Content ...
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="button">Cancel</button>
+            </footer>
+        </div>    
+    </div>
+
+    <button class="button is-primary" data-toggle="modal" data-target="otherModal">
+            Open Modal
+        </button>
+        <div class="modal" id="otherModal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Modal title</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    That other modal
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success">Save changes</button>
+                    <button class="button">Cancel</button>
+                </footer>
+            </div>    
+        </div>
+    <script src="js/codurance.js"></script>
+</body>
+</html>
