@@ -4,14 +4,17 @@
   "description": "A Codurance themed version of bulma.io",
   "main": "index.js",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/codurance.scss dist/codurance.css",
-    "css-watch": "npm run css-build -- --watch",
+    "css-build": "gulp sass",
+    "css-watch": "gulp sass:watch",
     "start": "npm run css-watch"
   },
   "author": "Codurance",
   "license": "Apache-2.0",
   "devDependencies": {
     "bulma": "^0.7.4",
+    "gulp": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
     "node-sass": "^4.11.0"
   }
 }
