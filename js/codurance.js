@@ -12,7 +12,7 @@ const openModal = modal => event => {
 const closeModal = modal => event => {
     if (isCloseButton(event)) {
         modal.classList.remove('is-active');
-        rootEl.classList.add('is-clipped');
+        rootEl.classList.remove('is-clipped');
     }
 }
 
