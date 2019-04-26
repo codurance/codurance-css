@@ -20,19 +20,22 @@ const minifyCss = () => {
 const minifyJs = () => {
     return gulp.src('./js/**/*.js')
             .pipe(minify())
-            .pipe(rename({suffix: 'min'}))
             .pipe(gulp.dest('./dist/js'));
 }
 
 const updateDocsCSS = () => {
-    gulp.src('./dist/css/codurance.css')            
-        .pipe(gulp.dest('./docs/assets/css'));
+    return gulp.src('./dist/css/codurance.css')            
+            .pipe(gulp.dest('./docs/assets/css'));
 };
 
-gulp.task('sass', gulp.series(compileCss, updateDocsCSS));
-gulp.task('minify', gulp.parallel(minifyCss, minifyJs));
+const updateDocsJS = () => {
+    return gulp.src('./dit/js/*.js')
+            .pipe(gulp.dest('./docs/assets/js'))
+}
 
 gulp.task('sass:watch', function () {
     gulp.watch('./sass/**/*.scss', compileCss);
 });
   
+gulp.task('minify', gulp.parallel(compileCss, minifyCss, minifyJs));
+gulp.task('build', gulp.series('minify', updateDocsCSS, updateDocsJS));
