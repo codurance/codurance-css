@@ -46,25 +46,25 @@ layout: default
 <div class="field is-grouped is-grouped-multiline">
     <div class="control">
         <div class="tags has-addons">
-            <a class="tag is-link">Technology</a>
+            <a class="tag is-link has-background-success">Technology</a>
             <a class="tag is-delete"></a>
         </div>
     </div>
     <div class="control">
         <div class="tags has-addons">
-            <a class="tag is-link">CSS</a>
+            <a class="tag is-link has-background-success">CSS</a>
             <a class="tag is-delete"></a>
         </div>
     </div>
     <div class="control">
         <div class="tags has-addons">
-            <a class="tag is-link">Flexbox</a>
+            <a class="tag is-link has-background-success">Flexbox</a>
             <a class="tag is-delete"></a>
         </div>
     </div>
     <div class="control">
         <div class="tags has-addons">
-            <a class="tag is-link">Web Design</a>
+            <a class="tag is-link has-background-success">Web Design</a>
             <a class="tag is-delete"></a>
         </div>
     </div>
@@ -159,112 +159,32 @@ layout: default
 {% endcapture %}
 {% include showcase-item.html content=modal %}
 
-### Table
-{% capture table %}
-<table class="table">
-  <thead>
-    <tr>
-      <th><abbr title="Position">Pos</abbr></th>
-      <th>Team</th>
-      <th><abbr title="Played">Pld</abbr></th>
-      <th><abbr title="Won">W</abbr></th>
-      <th><abbr title="Drawn">D</abbr></th>
-      <th><abbr title="Lost">L</abbr></th>
-      <th><abbr title="Goals for">GF</abbr></th>
-      <th><abbr title="Goals against">GA</abbr></th>
-      <th><abbr title="Goal difference">GD</abbr></th>
-      <th><abbr title="Points">Pts</abbr></th>
-      <th>Qualification or relegation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-      </td>
-      <td>38</td>
-      <td>23</td>
-      <td>12</td>
-      <td>3</td>
-      <td>68</td>
-      <td>36</td>
-      <td>+32</td>
-      <td>81</td>
-      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
-      <td>38</td>
-      <td>20</td>
-      <td>11</td>
-      <td>7</td>
-      <td>65</td>
-      <td>36</td>
-      <td>+29</td>
-      <td>71</td>
-      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham Hotspur</a></td>
-      <td>38</td>
-      <td>19</td>
-      <td>13</td>
-      <td>6</td>
-      <td>69</td>
-      <td>35</td>
-      <td>+34</td>
-      <td>70</td>
-      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
-    </tr>
-    <tr class="is-selected">
-      <th>4</th>
-      <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester City</a></td>
-      <td>38</td>
-      <td>19</td>
-      <td>9</td>
-      <td>10</td>
-      <td>71</td>
-      <td>41</td>
-      <td>+30</td>
-      <td>66</td>
-      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round" title="2016–17 UEFA Champions League">Champions League play-off round</a></td>
-    </tr>
-  </tbody>
-</table>
-{% endcapture %}
-
-{% include showcase-item.html content=table %}
-
 ### Card
 {% capture card %}
 <div class="card">
-  <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-    </figure>
-  </div>
+  <header class="card-header">
+    <p class="card-header-title">
+      Component
+    </p>
+    <a href="#" class="card-header-icon" aria-label="more options">
+      <span class="icon">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </a>
+  </header>
   <div class="card-content">
-    <div class="media">
-      <div class="media-left">
-        <figure class="image is-48x48">
-          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-        </figure>
-      </div>
-      <div class="media-content">
-        <p class="title is-4">John Smith</p>
-        <p class="subtitle is-6">@johnsmith</p>
-      </div>
-    </div>
     <div class="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-      <a href="#">#css</a> <a href="#">#responsive</a>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+      <a href="#" class="has-text-primary">@bulmaio</a>. <a href="#" class="has-text-primary">#css</a> <a href="#" class="has-text-primary">#responsive</a>
       <br>
       <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
     </div>
   </div>
+  <footer class="card-footer">
+    <a href="#" class="card-footer-item has-text-dark">Save</a>
+    <a href="#" class="card-footer-item has-text-dark">Edit</a>
+    <a href="#" class="card-footer-item has-text-dark">Delete</a>
+  </footer>
 </div>
 {% endcapture %}
 {% include showcase-item.html content=card %}
@@ -309,3 +229,85 @@ layout: default
 </nav>
 {% endcapture %}
 {% include showcase-item.html content=breadcrumb %}
+
+### Table
+{% capture table %}
+<table class="table">
+  <thead>
+    <tr>
+      <th><abbr title="Position">Pos</abbr></th>
+      <th>Team</th>
+      <th><abbr title="Played">Pld</abbr></th>
+      <th><abbr title="Won">W</abbr></th>
+      <th><abbr title="Drawn">D</abbr></th>
+      <th><abbr title="Lost">L</abbr></th>
+      <th><abbr title="Goals for">GF</abbr></th>
+      <th><abbr title="Goals against">GA</abbr></th>
+      <th><abbr title="Goal difference">GD</abbr></th>
+      <th><abbr title="Points">Pts</abbr></th>
+      <th>Qualification or relegation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>
+        <a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C." class="has-text-dark">
+            Leicester City
+        </a> 
+        <strong>(C)</strong>
+      </td>
+      <td>38</td>
+      <td>23</td>
+      <td>12</td>
+      <td>3</td>
+      <td>68</td>
+      <td>36</td>
+      <td>+32</td>
+      <td>81</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C." class="has-text-dark">Arsenal</a></td>
+      <td>38</td>
+      <td>20</td>
+      <td>11</td>
+      <td>7</td>
+      <td>65</td>
+      <td>36</td>
+      <td>+29</td>
+      <td>71</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C." class="has-text-dark">Tottenham Hotspur</a></td>
+      <td>38</td>
+      <td>19</td>
+      <td>13</td>
+      <td>6</td>
+      <td>69</td>
+      <td>35</td>
+      <td>+34</td>
+      <td>70</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr class="is-selected">
+      <th>4</th>
+      <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester City</a></td>
+      <td>38</td>
+      <td>19</td>
+      <td>9</td>
+      <td>10</td>
+      <td>71</td>
+      <td>41</td>
+      <td>+30</td>
+      <td>66</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round" title="2016–17 UEFA Champions League">Champions League play-off round</a></td>
+    </tr>
+  </tbody>
+</table>
+{% endcapture %}
+
+{% include showcase-item.html content=table %}
