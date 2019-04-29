@@ -2,8 +2,6 @@
 layout: default
 ---
 
-# Showcase
-
 ### Button
 {% capture button %}
 <a class="button is-primary">Primary</a>
@@ -25,7 +23,7 @@ layout: default
  
 ### Notification
 {% capture notification %}
-<div class="notification is-success" style="max-width: 38rem; margin: -0.5rem">
+<div class="notification is-success">
     <button class="delete"></button>
     Primar lorem ipsum dolor sit amet, consectetur
     adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
@@ -37,7 +35,7 @@ layout: default
 
 ### Progress Bar
 {% capture progressbar %}
-<progress class="progress is-warning" value="15" max="100" style="max-width: 36rem; margin: -0.5rem">
+<progress class="progress is-warning" value="15" max="100">
     15%
 </progress> 
 {% endcapture %}
@@ -160,3 +158,154 @@ layout: default
 </div>
 {% endcapture %}
 {% include showcase-item.html content=modal %}
+
+### Table
+{% capture table %}
+<table class="table">
+  <thead>
+    <tr>
+      <th><abbr title="Position">Pos</abbr></th>
+      <th>Team</th>
+      <th><abbr title="Played">Pld</abbr></th>
+      <th><abbr title="Won">W</abbr></th>
+      <th><abbr title="Drawn">D</abbr></th>
+      <th><abbr title="Lost">L</abbr></th>
+      <th><abbr title="Goals for">GF</abbr></th>
+      <th><abbr title="Goals against">GA</abbr></th>
+      <th><abbr title="Goal difference">GD</abbr></th>
+      <th><abbr title="Points">Pts</abbr></th>
+      <th>Qualification or relegation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
+      </td>
+      <td>38</td>
+      <td>23</td>
+      <td>12</td>
+      <td>3</td>
+      <td>68</td>
+      <td>36</td>
+      <td>+32</td>
+      <td>81</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
+      <td>38</td>
+      <td>20</td>
+      <td>11</td>
+      <td>7</td>
+      <td>65</td>
+      <td>36</td>
+      <td>+29</td>
+      <td>71</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham Hotspur</a></td>
+      <td>38</td>
+      <td>19</td>
+      <td>13</td>
+      <td>6</td>
+      <td>69</td>
+      <td>35</td>
+      <td>+34</td>
+      <td>70</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+    </tr>
+    <tr class="is-selected">
+      <th>4</th>
+      <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester City</a></td>
+      <td>38</td>
+      <td>19</td>
+      <td>9</td>
+      <td>10</td>
+      <td>71</td>
+      <td>41</td>
+      <td>+30</td>
+      <td>66</td>
+      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round" title="2016–17 UEFA Champions League">Champions League play-off round</a></td>
+    </tr>
+  </tbody>
+</table>
+{% endcapture %}
+
+{% include showcase-item.html content=table %}
+
+### Card
+{% capture card %}
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">John Smith</p>
+        <p class="subtitle is-6">@johnsmith</p>
+      </div>
+    </div>
+    <div class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+      <a href="#">#css</a> <a href="#">#responsive</a>
+      <br>
+      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+{% include showcase-item.html content=card %}
+
+### Breadcrumb
+{% capture breadcrumb %}
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    <li>
+      <a href="#">
+        <span class="icon is-small">
+          <i class="fas fa-home" aria-hidden="true"></i>
+        </span>
+        <span>Codurance</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="icon is-small">
+          <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        <span>Documentation</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="icon is-small">
+          <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+        </span>
+        <span>Components</span>
+      </a>
+    </li>
+    <li class="is-active">
+      <a href="#">
+        <span class="icon is-small">
+          <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+        </span>
+        <span>Breadcrumb</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+{% endcapture %}
+{% include showcase-item.html content=breadcrumb %}
