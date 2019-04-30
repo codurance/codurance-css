@@ -6,6 +6,25 @@ layout: default
 ## Showcase
 </div>
 
+<aside markdown="1">
+Table of Contents
+
+- [Button](#button)
+- [Icon](#icon)
+- [Notification](#notification)
+- [Progress Bar](#progress-bar)
+- [Tag](#tag)
+- [Dark Background](#dark-background)
+- [Codurance Header](#codurance-header)
+- [Bullet Point](#bullet-point)
+- [Modal](#modal)
+- [Card](#card)
+- [Breadcrumb](#breadcrumb)
+- [Tabs](#tabs)
+- [Table](#table)
+<br/> <br/>
+</aside>
+
 ### Button
 {% capture button %}
 <a class="button is-primary">Primary</a>
