@@ -6990,3 +6990,21 @@ ol {
 
 .highlighter-rouge {
   margin-top: 1.5em; }
+
+.card-content .content a {
+  color: #ef7726; }
+
+.card-footer a, .tabs li a, .breadcrumb a, a {
+  color: #185466; }
+
+.tabs.is-toggle li.is-active a {
+  background-color: #ef7726;
+  border-color: #ef7726;
+  color: #fff;
+  z-index: 1; }
+
+.breadcrumb li.is-active a {
+  color: #ef7726; }
+
+.breadcrumb a:hover, .tabs a:hover, a:hover {
+  color: #51bfbb; }
