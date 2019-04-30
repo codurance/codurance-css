@@ -230,6 +230,40 @@ layout: default
 {% endcapture %}
 {% include showcase-item.html content=breadcrumb %}
 
+
+### Tabs
+{% capture tabs %}
+<div class="tabs is-toggle is-toggle-rounded">
+  <ul>
+    <li class="is-active">
+      <a>
+        <span class="icon is-small"><i class="fas fa-image"></i></span>
+        <span>Pictures</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fas fa-music"></i></span>
+        <span>Music</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fas fa-film"></i></span>
+        <span>Videos</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fas fa-file-alt"></i></span>
+        <span>Documents</span>
+      </a>
+    </li>
+  </ul>
+</div>
+{% endcapture %}
+{% include showcase-item.html content=tabs %}
+
 ### Table
 {% capture table %}
 <table class="table">
