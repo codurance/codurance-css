@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<div class="codurance-header" markdown="1">
+## Showcase
+</div>
+
 ### Button
 {% capture button %}
 <a class="button is-primary">Primary</a>
