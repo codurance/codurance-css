@@ -121,3 +121,26 @@ ol {
 .highlighter-rouge {
     margin-top: 1.5em;
 }
+
+.card-content .content a {
+    color: $codurance-orange;
+}
+
+.card-footer a, .tabs li a, .breadcrumb a, a {
+    color: $codurance-green;
+}
+
+.tabs.is-toggle li.is-active a {
+    background-color: $codurance-orange;
+    border-color: $codurance-orange;
+    color: #fff;
+    z-index: 1;
+}
+
+.breadcrumb li.is-active a {
+    color: $codurance-orange;
+}
+
+.breadcrumb a:hover, .tabs a:hover, a:hover {
+    color: $codurance-light-green;
+}

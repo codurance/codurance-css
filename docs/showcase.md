@@ -175,15 +175,15 @@ layout: default
   <div class="card-content">
     <div class="content">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-      <a href="#" class="has-text-primary">@bulmaio</a>. <a href="#" class="has-text-primary">#css</a> <a href="#" class="has-text-primary">#responsive</a>
+      <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
       <br>
       <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
     </div>
   </div>
   <footer class="card-footer">
-    <a href="#" class="card-footer-item has-text-dark">Save</a>
-    <a href="#" class="card-footer-item has-text-dark">Edit</a>
-    <a href="#" class="card-footer-item has-text-dark">Delete</a>
+    <a href="#" class="card-footer-item">Save</a>
+    <a href="#" class="card-footer-item">Edit</a>
+    <a href="#" class="card-footer-item">Delete</a>
   </footer>
 </div>
 {% endcapture %}
@@ -286,9 +286,7 @@ layout: default
     <tr>
       <th>1</th>
       <td>
-        <a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C." class="has-text-dark">
-            Leicester City
-        </a> 
+        <a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> 
         <strong>(C)</strong>
       </td>
       <td>38</td>
@@ -299,11 +297,16 @@ layout: default
       <td>36</td>
       <td>+32</td>
       <td>81</td>
-      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+      <td>
+        Qualification for the
+        <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">
+          Champions League group stage
+        </a>
+      </td>
     </tr>
     <tr>
       <th>2</th>
-      <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C." class="has-text-dark">Arsenal</a></td>
+      <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
       <td>38</td>
       <td>20</td>
       <td>11</td>
@@ -312,11 +315,16 @@ layout: default
       <td>36</td>
       <td>+29</td>
       <td>71</td>
-      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+      <td>
+        Qualification for the 
+        <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">
+          Champions League group stage
+        </a>
+      </td>
     </tr>
     <tr>
       <th>3</th>
-      <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C." class="has-text-dark">Tottenham Hotspur</a></td>
+      <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham Hotspur</a></td>
       <td>38</td>
       <td>19</td>
       <td>13</td>
@@ -325,7 +333,12 @@ layout: default
       <td>35</td>
       <td>+34</td>
       <td>70</td>
-      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+      <td>
+        Qualification for the 
+        <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage" title="2016–17 UEFA Champions League">
+          Champions League group stage
+        </a>
+      </td>
     </tr>
     <tr class="is-selected">
       <th>4</th>
@@ -338,7 +351,12 @@ layout: default
       <td>41</td>
       <td>+30</td>
       <td>66</td>
-      <td>Qualification for the <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round" title="2016–17 UEFA Champions League">Champions League play-off round</a></td>
+      <td>
+        Qualification for the 
+        <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round" title="2016–17 UEFA Champions League">
+          Champions League play-off round
+        </a>
+      </td>
     </tr>
   </tbody>
 </table>
