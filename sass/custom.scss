@@ -1,0 +1,60 @@
+@import "./_colors.scss";
+
+.dark-background {
+    color: $light;
+    background-color: $dark;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $light;
+    }
+}
+
+.codurance-header, .codurance-header__strong {
+    border-color: $codurance-orange;
+    margin-bottom: 2.14286rem;
+}
+
+.codurance-header::after {
+    content: '';
+    border-color: $codurance-orange;
+    margin-top: 1.07143rem;
+    width: 5rem;
+    border-top-width: 1px;
+    display: inline-block;
+    border-top-style: solid;
+}
+
+.codurance-header__strong::after {
+    @extend .codurance-header::after;
+    border-top-width: 2px;
+}
+
+.bullet-point {    
+    border-left: solid 1px transparent;
+    border-color: $codurance-orange;
+    border-width: 3px;
+    padding-left: 1.42857rem;
+    padding-right: 1.42857rem;
+}
+
+.bullet-point:hover {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-duration: .3s;
+    border-color: $codurance-green;    
+}
+
+.bullet-point:hover {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-duration: .3s;
+    border-color: $codurance-green;    
+}
+
+.dark-background {
+    .bullet-point:hover {
+        border-color: $light;    
+    }
+}
