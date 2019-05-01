@@ -6,7 +6,8 @@ layout: default
 ## Showcase
 </div>
 
-<aside markdown="1">
+
+{% capture items %}
 Table of Contents
 
 - [Button](#button)
@@ -22,8 +23,8 @@ Table of Contents
 - [Breadcrumb](#breadcrumb)
 - [Tabs](#tabs)
 - [Table](#table)
-<br/> <br/>
-</aside>
+{% endcapture %}
+{% include sidebar.html content=items %}
 
 ### Button
 {% capture button %}
