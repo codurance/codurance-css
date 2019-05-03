@@ -3,3 +3,10 @@
     display: block;
     max-width: 115px;
 }
+
+.circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
