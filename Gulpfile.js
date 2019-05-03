@@ -5,13 +5,13 @@ const minify = require('gulp-minify');
 sass.compiler = require('node-sass');
 
 const compileCss = () => {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./sass/codurance.scss')
         .pipe(sass().on('error', sass.logError))    
         .pipe(gulp.dest('./dist/css'));
 };
 
 const minifyCss = () => {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./sass/codurance.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/css'));
@@ -34,7 +34,7 @@ const updateDocsJS = () => {
 };
 
 gulp.task('sass:watch', function () {
-    gulp.watch('./sass/**/*.scss', gulp.series(compileCss, updateDocsCSS));
+    gulp.watch('./sass/codurance.scss', gulp.series(compileCss, updateDocsCSS));
 });
   
 gulp.task('minify', gulp.parallel(compileCss, minifyCss, minifyJs));
