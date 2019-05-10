@@ -290,7 +290,7 @@ Table of Contents
 
 ### Table
 {% capture table %}
-<table class="table">
+<table>
   <thead>
     <tr>
       <th><abbr title="Position">Pos</abbr></th>
@@ -385,5 +385,4 @@ Table of Contents
   </tbody>
 </table>
 {% endcapture %}
-
 {% include showcase-item.html content=table %}

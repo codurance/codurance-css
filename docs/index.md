@@ -38,59 +38,63 @@ The colour scheme in the library is based in the Codurance's brand guidelines th
     </div>
 </div>
 
-The colour scheme in the library is based in the Codurance's brand guidelines that tells use to use:
-The library is build with node.js and npm, so you are going to need both before starting. 
-
-Bulma has a quite easy way of overriding the main styles when using `sass`, we just have to set the following variables: 
-
-- `$primary`
-- `$info`
-- `$success`
-- `$warning`
-- `$danger`
-- `$dark`
-- `$family-primary`
-
-```json
-{
-    "scripts": {
-        "css-build": "node-sass --omit-source-map-url sass/codurance.scss dist/codurance.css",
-        "css-watch": "npm run css-build -- --watch",
-        "start": "npm run css-watch"
-    }
-}
-```
-
 <div class="codurance-header" style="margin-top: 15px;" markdown="1">
 ## Changing Bulma styles
 </div>
 
+The library is build with node.js and npm, so you are going to need both before starting. 
+
+Bulma allows customisation by overriding variables, so the `_colors.scss` file has all the variables with codurance colours,
+and we override them in the `codurance.scss` file. 
+
+The list of variables are: 
+
+| Bulma variable | Our variable | Colour |
+| :--- | :--- | :---: |
+| $primary | $codurance-red | #d60d74 |
+| $info | $codurance-orange | #ef7726 |
+| $success | $codurance-yellow | #ffd000 |
+| $warning | $codurance-purple | #5c64b9 |
+| $danger | $codurance-green | #185466 |
+| $dark | $codurance-light-green | #51bfbb |
+
 To change styles in Bulma you can override the variables for the library, you can see them [here](https://bulma.io/documentation/customize/variables/) 
 When changing the `codurance.scss` the `@import` for bulma always has to be in the bottom so it can read the variables declared. 
 
-```scss
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+<div class="codurance-header" style="margin-top: 15px;" markdown="1">
+## Building the library
+</div>
 
-// Codurance Colors
-$codurance-red: #d60d74;
-$codurance-orange: #ef7726;
-$codurance-yellow: #ffd000;
-$codurance-purple: #5c64b9;
-$codurance-green: #185466;
-$codurance-light-green: #51bfbb;
-$codurance-font: 'Open Sans', Arial, sans-serif;
+`Gulp` is being used to generate the `css` and `js` files, it will compile the `scss` and minify everthing. 
 
-    
-// Update Bulma Global variables
-$primary: $codurance-orange;
-$info: $codurance-purple;
-$success: $codurance-light-green;
-$warning: $codurance-yellow;
-$danger: $codurance-red;
-$dark: $codurance-green;
-$family-primary: $codurance-font;
-
-// Import bulma.sass is always after declaring the variables
-@import "../node_modules/bulma/bulma.sass";
+You are going to need to install gulp and the dependencies:
+```shell
+# install gulp
+$ npm install gulp -g
+# install all the depencies
+$ npm install
 ```
+
+Then to run the project you can do `npm start` this will watch the changes inside the `sass` folder and recompile the files. 
+
+All the tasks are declared in the `Gulpfile.js` and you can run the tasks with the command:
+```shell
+$ gulp <taskname>
+```
+
+The declared tasks are: 
+
+- `sass:watch` - Keep watching the scss files and compile into a new css file when there is change in the files
+- `minify` - Create a minified version of the css and javascript files.
+- `build` - The build task minifies the files and update the files in the `docs` folder.
+
+<div class="codurance-header" style="margin-top: 15px;" markdown="1">
+## Editing the styles
+</div>
+
+The library has four main components:
+
+- `_color.scss`: This is the file where we are going to declare the variables with the codurance colours.
+- `overrides.scss`: Is the file where we override bulma styles like the `h` or `table`. 
+- `custom.scss`: is the file containing elements created specifically for the library and try to emulate the elements from the new services pages. 
+

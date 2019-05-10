@@ -1,4 +1,3 @@
-@import "./_colors.scss";
 
 h1 {
     @extend .title, .is-1;
@@ -60,4 +59,8 @@ ol {
 
 .breadcrumb a:hover, .tabs a:hover, a:hover {
     color: $codurance-light-green;
+}
+
+table {
+    @extend .table;
 }
