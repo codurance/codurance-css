@@ -42,11 +42,10 @@ The colour scheme in the library is based in the Codurance's brand guidelines th
 ## Changing Bulma styles
 </div>
 
-The colour scheme in the library is based in the Codurance's brand guidelines that tells use to use:
 The library is build with node.js and npm, so you are going to need both before starting. 
 
 Bulma allows customisation by overriding variables, so the `_colors.scss` file has all the variables with codurance colours,
-and we override then in the `codurance.scss` file. 
+and we override them in the `codurance.scss` file. 
 
 The list of variables are: 
 
@@ -83,7 +82,7 @@ All the tasks are declared in the `Gulpfile.js` and you can run the tasks with t
 $ gulp <taskname>
 ```
 
-The decalred tasks are: 
+The declared tasks are: 
 
 - `sass:watch` - Keep watching the scss files and compile into a new css file when there is change in the files
 - `minify` - Create a minified version of the css and javascript files.
