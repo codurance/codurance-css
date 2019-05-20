@@ -11,11 +11,11 @@
   "author": "Codurance",
   "license": "Apache-2.0",
   "devDependencies": {
-    "bulma": "^0.7.4",
-    "gulp": "^4.0.1",
+    "bulma": "^0.7.5",
+    "gulp": "^4.0.2",
     "gulp-minify": "^3.1.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.12.0"
   }
 }
